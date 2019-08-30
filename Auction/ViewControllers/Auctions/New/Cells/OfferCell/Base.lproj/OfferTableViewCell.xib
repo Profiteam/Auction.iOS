@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Bold.otf">
+            <string>Exo2.0-Bold</string>
+        </array>
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OfferTableViewCell" rowHeight="172" id="KGk-i7-Jjw" customClass="OfferTableViewCell" customModule="Auction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="187.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpM-wf-AdD">
+                        <rect key="frame" x="18" y="8" width="316" height="171.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_offer_cell_background" translatesAutoresizingMaskIntoConstraints="NO" id="74k-sa-i4a">
+                                <rect key="frame" x="-7" y="-8" width="330" height="186.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bids now 13$ each!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HK-Ug-mo9">
+                                <rect key="frame" x="6" y="74.5" width="304" height="23"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Bold" family="Exo 2.0" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-IE-VDi">
+                                <rect key="frame" x="26" y="111.5" width="264" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kkT-FO-lSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="16"/>
+                                <state key="normal" title="Click here to see the offer">
+                                    <color key="titleColor" red="0.16862745098039217" green="0.396078431372549" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="offerButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ilE-XL-ydB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tB-2Z-fyr">
+                                <rect key="frame" x="6" y="16" width="304" height="50.5"/>
+                                <string key="text">Get free bids 3x as fast!
+Time as Highest Bidder meter will fill up
+three times as fast today!</string>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ebt-IE-VDi" firstAttribute="leading" secondItem="wpM-wf-AdD" secondAttribute="leading" constant="26" id="4pJ-jb-g0Z"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebt-IE-VDi" secondAttribute="trailing" constant="26" id="COM-eA-OH7"/>
+                            <constraint firstItem="7HK-Ug-mo9" firstAttribute="leading" secondItem="wpM-wf-AdD" secondAttribute="leading" constant="6" id="ERj-ii-iql"/>
+                            <constraint firstAttribute="bottom" secondItem="Ebt-IE-VDi" secondAttribute="bottom" constant="16" id="Nal-GO-ZDn"/>
+                            <constraint firstItem="7HK-Ug-mo9" firstAttribute="top" relation="lessThanOrEqual" secondItem="5tB-2Z-fyr" secondAttribute="bottom" constant="8" id="PKv-Oo-TmH"/>
+                            <constraint firstAttribute="trailing" secondItem="7HK-Ug-mo9" secondAttribute="trailing" constant="6" id="Pos-Ke-QOH"/>
+                            <constraint firstItem="5tB-2Z-fyr" firstAttribute="leading" secondItem="wpM-wf-AdD" secondAttribute="leading" constant="6" id="UYE-H2-2oF"/>
+                            <constraint firstItem="74k-sa-i4a" firstAttribute="top" secondItem="wpM-wf-AdD" secondAttribute="top" constant="-8" id="d5z-Da-QO3"/>
+                            <constraint firstItem="Ebt-IE-VDi" firstAttribute="top" secondItem="7HK-Ug-mo9" secondAttribute="bottom" constant="14" id="gbf-Hr-gGr"/>
+                            <constraint firstItem="74k-sa-i4a" firstAttribute="leading" secondItem="wpM-wf-AdD" secondAttribute="leading" constant="-7" id="iYx-4t-Up9"/>
+                            <constraint firstAttribute="trailing" secondItem="74k-sa-i4a" secondAttribute="trailing" constant="-7" id="q8G-72-8XJ"/>
+                            <constraint firstAttribute="bottom" secondItem="74k-sa-i4a" secondAttribute="bottom" constant="-7" id="uI4-zd-inh"/>
+                            <constraint firstAttribute="trailing" secondItem="5tB-2Z-fyr" secondAttribute="trailing" constant="6" id="vLW-jA-sOr"/>
+                            <constraint firstItem="5tB-2Z-fyr" firstAttribute="top" secondItem="wpM-wf-AdD" secondAttribute="top" constant="16" id="wUU-SR-SXb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="-1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wpM-wf-AdD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Y3c-6T-3aJ"/>
+                    <constraint firstAttribute="trailing" secondItem="wpM-wf-AdD" secondAttribute="trailing" constant="13" id="di2-xd-cbQ"/>
+                    <constraint firstItem="wpM-wf-AdD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="eZT-E8-Llk"/>
+                    <constraint firstAttribute="bottom" secondItem="wpM-wf-AdD" secondAttribute="bottom" constant="8" id="ro7-rV-0Lm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="Ebt-IE-VDi" id="jYv-cG-Hrd"/>
+                <outlet property="insideView" destination="wpM-wf-AdD" id="JeN-qr-WVF"/>
+                <outlet property="subtitleLabel" destination="7HK-Ug-mo9" id="u6i-qr-Sqz"/>
+                <outlet property="titleLabel" destination="5tB-2Z-fyr" id="qQE-6g-h1D"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="113.3433283358321"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_offer_cell_background" width="360" height="199"/>
+    </resources>
+</document>

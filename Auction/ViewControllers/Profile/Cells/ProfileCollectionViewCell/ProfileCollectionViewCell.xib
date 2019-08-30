@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="Auction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile_auctions" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-Ys-Rkp">
+                        <rect key="frame" x="24" y="24" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="6da-t6-ZeO"/>
+                            <constraint firstAttribute="height" constant="24" id="faJ-D5-FJb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auctions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jX-ff-PuJ">
+                        <rect key="frame" x="65" y="25" width="370" height="22"/>
+                        <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXz-SR-FTb">
+                        <rect key="frame" x="22" y="71" width="413" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hRG-pM-ViU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YXz-SR-FTb" secondAttribute="bottom" id="0f4-F1-Wdm"/>
+                <constraint firstAttribute="trailing" secondItem="7jX-ff-PuJ" secondAttribute="trailing" constant="24" id="C47-g1-N9d"/>
+                <constraint firstItem="YXz-SR-FTb" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="22" id="SMf-Ne-geE"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="YXz-SR-FTb" secondAttribute="trailing" constant="24" id="WIH-ao-S0G"/>
+                <constraint firstItem="5n5-Ys-Rkp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Yh3-zv-fo6"/>
+                <constraint firstItem="7jX-ff-PuJ" firstAttribute="leading" secondItem="5n5-Ys-Rkp" secondAttribute="trailing" constant="17" id="hZ1-9X-j98"/>
+                <constraint firstItem="5n5-Ys-Rkp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="mn2-zE-S7Q"/>
+                <constraint firstItem="7jX-ff-PuJ" firstAttribute="centerY" secondItem="5n5-Ys-Rkp" secondAttribute="centerY" id="pKU-Ba-YYn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="459" height="54"/>
+            <connections>
+                <outlet property="imageView" destination="5n5-Ys-Rkp" id="pUU-bM-G9s"/>
+                <outlet property="separatorView" destination="YXz-SR-FTb" id="VUa-kg-WiW"/>
+                <outlet property="titleLabel" destination="7jX-ff-PuJ" id="OCf-0M-1wK"/>
+            </connections>
+            <point key="canvasLocation" x="464.80000000000001" y="155.62218890554723"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profile_auctions" width="24" height="24"/>
+    </resources>
+</document>

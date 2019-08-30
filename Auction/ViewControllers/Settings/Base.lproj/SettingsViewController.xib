@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="customTitle" destination="7Kk-la-d7P" id="RHh-KV-lg2"/>
+                <outlet property="largeTitlePosY" destination="PSe-yI-sri" id="ziV-Fi-fgI"/>
+                <outlet property="tableView" destination="kEx-Mp-W6B" id="U6X-UT-dxq"/>
+                <outlet property="topTableViewConstraint" destination="5eb-Dt-GE3" id="w5a-ob-FHj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background_settings" translatesAutoresizingMaskIntoConstraints="NO" id="3eZ-n8-dor">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3eZ-n8-dor" secondAttribute="height" multiplier="1.38:1" id="jUB-nX-YTR"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kEx-Mp-W6B">
+                    <rect key="frame" x="0.0" y="126" width="375" height="541"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Bcp-Xb-dq0"/>
+                        <outlet property="delegate" destination="-1" id="d70-et-0QP"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kk-la-d7P">
+                    <rect key="frame" x="16" y="62" width="178" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kEx-Mp-W6B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="126" id="5eb-Dt-GE3"/>
+                <constraint firstItem="3eZ-n8-dor" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hcz-PU-V2V"/>
+                <constraint firstItem="kEx-Mp-W6B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="POZ-Kd-ZQ0"/>
+                <constraint firstItem="7Kk-la-d7P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="PSe-yI-sri"/>
+                <constraint firstAttribute="trailing" secondItem="3eZ-n8-dor" secondAttribute="trailing" id="Wzd-sJ-1AY"/>
+                <constraint firstItem="7Kk-la-d7P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="a1d-U7-G3S"/>
+                <constraint firstAttribute="bottom" secondItem="kEx-Mp-W6B" secondAttribute="bottom" id="ckh-EE-Wxb"/>
+                <constraint firstItem="3eZ-n8-dor" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dL1-Km-y8J"/>
+                <constraint firstAttribute="trailing" secondItem="kEx-Mp-W6B" secondAttribute="trailing" id="kk6-qT-VT3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_background_settings" width="375" height="270"/>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="customTitle" destination="gGR-qV-dJh" id="mAl-SL-rgY"/>
+                <outlet property="editButton" destination="Z5f-bj-yST" id="mm9-mP-HBT"/>
+                <outlet property="editButtonTopSpace" destination="YcZ-8o-PJd" id="k1n-xK-Dbn"/>
+                <outlet property="largeTitlePosY" destination="fVb-Ke-EO8" id="SG4-tL-si2"/>
+                <outlet property="tableView" destination="81u-rR-CdZ" id="Zkw-nm-YTd"/>
+                <outlet property="topTableViewConstraint" destination="N5d-7q-drR" id="tve-He-aLM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXv-Px-htJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background_profile" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-L8-Xqj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UXv-L8-Xqj" secondAttribute="height" multiplier="1.38:1" id="pbJ-Bb-zRg"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UXv-L8-Xqj" secondAttribute="trailing" id="ETH-nR-hTc"/>
+                        <constraint firstItem="UXv-L8-Xqj" firstAttribute="leading" secondItem="zXv-Px-htJ" secondAttribute="leading" id="dEt-zL-IU8"/>
+                        <constraint firstItem="UXv-L8-Xqj" firstAttribute="top" secondItem="zXv-Px-htJ" secondAttribute="top" id="nrL-mh-z2h"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGR-qV-dJh">
+                    <rect key="frame" x="16" y="62" width="269" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="81u-rR-CdZ">
+                    <rect key="frame" x="0.0" y="126" width="375" height="541"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Xmo-Wq-Oto"/>
+                        <outlet property="delegate" destination="-1" id="B2P-Q1-0bj"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5f-bj-yST">
+                    <rect key="frame" x="301" y="74" width="60" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Sdk-sh-PsK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <state key="normal" title="Edit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="editButtonAction:" destination="-1" eventType="touchUpInside" id="axe-ct-l7a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z5f-bj-yST" secondAttribute="trailing" constant="14" id="0Sa-af-TZM"/>
+                <constraint firstItem="Z5f-bj-yST" firstAttribute="leading" secondItem="gGR-qV-dJh" secondAttribute="trailing" constant="16" id="LBS-X0-hFJ"/>
+                <constraint firstItem="81u-rR-CdZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="126" id="N5d-7q-drR"/>
+                <constraint firstAttribute="bottom" secondItem="81u-rR-CdZ" secondAttribute="bottom" id="X0o-zJ-o52"/>
+                <constraint firstItem="Z5f-bj-yST" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="YcZ-8o-PJd"/>
+                <constraint firstAttribute="trailing" secondItem="zXv-Px-htJ" secondAttribute="trailing" id="aHL-Vv-y25"/>
+                <constraint firstItem="gGR-qV-dJh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="fVb-Ke-EO8"/>
+                <constraint firstAttribute="trailing" secondItem="81u-rR-CdZ" secondAttribute="trailing" id="irA-cB-8UG"/>
+                <constraint firstItem="81u-rR-CdZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k0o-6w-xff"/>
+                <constraint firstItem="gGR-qV-dJh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="nWf-mH-VbM"/>
+                <constraint firstAttribute="bottom" secondItem="zXv-Px-htJ" secondAttribute="bottom" id="san-eL-L3c"/>
+                <constraint firstItem="zXv-Px-htJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sgP-1a-fiI"/>
+                <constraint firstItem="zXv-Px-htJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w5b-Zx-x9N"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_background_profile" width="375" height="270"/>
+    </resources>
+</document>

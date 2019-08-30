@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookmarkedViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyLabel" destination="NlJ-ir-q11" id="Q7G-tT-t62"/>
+                <outlet property="tableView" destination="gXW-AG-x3d" id="scv-bY-fVk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlJ-ir-q11" userLabel="Ooops, nothing here! You dont have any bookmarked lot">
+                    <rect key="frame" x="108.5" y="435.5" width="197.5" height="25"/>
+                    <attributedString key="attributedText">
+                        <fragment content="There is nothing is here!">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="56">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="84">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="112">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="140">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="168">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="196">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="224">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="252">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="280">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="308">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="336">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gXW-AG-x3d">
+                    <rect key="frame" x="0.0" y="24" width="414" height="872"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fxg-XG-rBA"/>
+                        <outlet property="delegate" destination="-1" id="Ywj-i9-prX"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gXW-AG-x3d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Dn-de-2ss"/>
+                <constraint firstItem="gXW-AG-x3d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="BRS-SF-7Al"/>
+                <constraint firstAttribute="trailing" secondItem="gXW-AG-x3d" secondAttribute="trailing" id="Jpe-p3-BlC"/>
+                <constraint firstItem="NlJ-ir-q11" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TZn-Yc-1Iw"/>
+                <constraint firstItem="NlJ-ir-q11" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xge-Jh-ICC"/>
+                <constraint firstAttribute="bottom" secondItem="gXW-AG-x3d" secondAttribute="bottom" id="qNb-8D-z6M"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

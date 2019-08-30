@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "h8B-ZX-joU"; */
+"h8B-ZX-joU.text" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Already have an account? Sign in"; ObjectID = "ktV-px-3Ec"; */
+"ktV-px-3Ec.normalTitle" = "Already have an account? Sign in";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "pEn-Jc-yKe"; */
+"pEn-Jc-yKe.normalTitle" = "Sign up";

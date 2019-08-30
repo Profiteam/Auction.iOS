@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddingCardViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="4ZF-3M-FoO" id="qm5-1G-7QC"/>
+                <outlet property="hintTitle" destination="c08-X9-MWt" id="qqv-Af-qBB"/>
+                <outlet property="tableView" destination="bus-xJ-EL7" id="PWO-Cn-OAz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c08-X9-MWt">
+                    <rect key="frame" x="47.5" y="79" width="280" height="51.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="kGh-ee-1Vs"/>
+                    </constraints>
+                    <string key="text">Enter your personal 
+information</string>
+                    <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZF-3M-FoO">
+                    <rect key="frame" x="10" y="36" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="UH0-fT-hbj"/>
+                        <constraint firstAttribute="width" constant="24" id="hhn-UJ-4pK"/>
+                    </constraints>
+                    <state key="normal" image="ic_backarrow_white"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="WUs-vF-dkl"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bus-xJ-EL7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9d7-gY-1iq"/>
+                        <outlet property="delegate" destination="-1" id="ypa-3S-TJQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bus-xJ-EL7" secondAttribute="trailing" id="7wT-ld-avY"/>
+                <constraint firstAttribute="bottom" secondItem="bus-xJ-EL7" secondAttribute="bottom" id="GWN-rK-nXx"/>
+                <constraint firstItem="c08-X9-MWt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="NQO-0O-oC3"/>
+                <constraint firstItem="c08-X9-MWt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TsR-hs-STw"/>
+                <constraint firstItem="4ZF-3M-FoO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="UO5-RJ-rDA"/>
+                <constraint firstItem="bus-xJ-EL7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="adH-Xd-TDM"/>
+                <constraint firstItem="4ZF-3M-FoO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="dk2-Yz-8IA"/>
+                <constraint firstItem="bus-xJ-EL7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sSg-Kk-ePc"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="csn-Sp-h8N" appends="YES" id="R23-JK-LpL"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+        <tapGestureRecognizer id="csn-Sp-h8N">
+            <connections>
+                <action selector="endEditinGesture:" destination="-1" id="lBG-qA-Fma"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_backarrow_white" width="9" height="16"/>
+    </resources>
+</document>

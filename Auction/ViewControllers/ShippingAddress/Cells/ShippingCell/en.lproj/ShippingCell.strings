@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "Zip Code"; ObjectID = "7Cf-si-XT1"; */
+"7Cf-si-XT1.placeholder" = "Zip Code";
+
+/* Class = "UIButton"; normalTitle = "Pay"; ObjectID = "86K-Fd-9kC"; */
+"86K-Fd-9kC.normalTitle" = "Pay";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "FWK-1a-n17"; */
+"FWK-1a-n17.placeholder" = "Last Name";
+
+/* Class = "UITextField"; placeholder = "Street Address"; ObjectID = "Jpp-sS-3IO"; */
+"Jpp-sS-3IO.placeholder" = "Street Address";
+
+/* Class = "UITextField"; placeholder = "State"; ObjectID = "SWj-gO-dju"; */
+"SWj-gO-dju.placeholder" = "State";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "U4t-9K-h34"; */
+"U4t-9K-h34.placeholder" = "City";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Um0-wa-mtm"; */
+"Um0-wa-mtm.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "VzX-eY-K8f"; */
+"VzX-eY-K8f.placeholder" = "Phone Number";

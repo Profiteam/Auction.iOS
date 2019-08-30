@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletBalanceViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="customTitle" destination="FJA-ND-XGU" id="uOl-ha-k8j"/>
+                <outlet property="largeTitlePosY" destination="yx4-53-24q" id="hh5-ho-Pxy"/>
+                <outlet property="tableView" destination="cB5-Y9-c8G" id="Hsd-lr-sxe"/>
+                <outlet property="topConstraint" destination="mgY-tW-cIA" id="qVe-qC-Enr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background_wallet" translatesAutoresizingMaskIntoConstraints="NO" id="nW1-Jf-LYM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nW1-Jf-LYM" secondAttribute="height" multiplier="1.38:1" id="tSa-on-kLc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" المحفظة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJA-ND-XGU">
+                    <rect key="frame" x="16" y="62" width="156.5" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-Y9-c8G">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bMy-Cw-Aus"/>
+                        <outlet property="delegate" destination="-1" id="PxE-pb-2f1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FJA-ND-XGU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4ak-W7-dSl"/>
+                <constraint firstAttribute="trailing" secondItem="cB5-Y9-c8G" secondAttribute="trailing" id="79T-MO-GnS"/>
+                <constraint firstItem="nW1-Jf-LYM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="807-U7-hfO"/>
+                <constraint firstItem="nW1-Jf-LYM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JL8-dJ-Jve"/>
+                <constraint firstAttribute="bottom" secondItem="cB5-Y9-c8G" secondAttribute="bottom" id="Nl7-qJ-Kgs"/>
+                <constraint firstItem="cB5-Y9-c8G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gMB-0R-n9Q"/>
+                <constraint firstAttribute="trailing" secondItem="nW1-Jf-LYM" secondAttribute="trailing" id="kiw-Mi-KRV"/>
+                <constraint firstItem="cB5-Y9-c8G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mgY-tW-cIA"/>
+                <constraint firstItem="nW1-Jf-LYM" firstAttribute="width" secondItem="nW1-Jf-LYM" secondAttribute="height" multiplier="1.38:1" id="pnn-3k-Pch"/>
+                <constraint firstItem="FJA-ND-XGU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="yx4-53-24q"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_background_wallet" width="375" height="270"/>
+    </resources>
+</document>

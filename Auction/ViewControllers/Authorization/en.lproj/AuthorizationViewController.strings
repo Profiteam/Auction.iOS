@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Forgot your password?"; ObjectID = "1gO-mu-23K"; */
+"1gO-mu-23K.normalTitle" = "Forgot your password?";
+
+/* Class = "UIButton"; normalTitle = "Don’t have an account? Sign up"; ObjectID = "6wl-TP-zaV"; */
+"6wl-TP-zaV.normalTitle" = "Don’t have an account? Sign up";
+
+/* Class = "UILabel"; text = "Wrong e-mail or\npassword"; ObjectID = "Hkg-Jw-HJu"; */
+"Hkg-Jw-HJu.text" = "Wrong e-mail or\npassword";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "NOh-HV-iOv"; */
+"NOh-HV-iOv.text" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "m5n-rB-Qfg"; */
+"m5n-rB-Qfg.normalTitle" = "Sign in";

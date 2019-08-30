@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="containerBarView" destination="iSu-0r-gPS" id="7z8-Aj-xQG"/>
+                <outlet property="customTitle" destination="dud-qX-wq1" id="lfb-nQ-zY9"/>
+                <outlet property="largeTitlePosY" destination="kbS-BQ-5h8" id="2CF-sU-6Xc"/>
+                <outlet property="pageIndicator" destination="tgG-OW-Xkc" id="lOq-j7-fsQ"/>
+                <outlet property="pagePosY" destination="99s-ji-mYQ" id="2w5-ex-mbD"/>
+                <outlet property="topContainerConstraint" destination="xmZ-IA-E9v" id="8cb-fU-gXW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background_wallet" translatesAutoresizingMaskIntoConstraints="NO" id="HtY-JE-RvD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HtY-JE-RvD" secondAttribute="height" multiplier="1.38:1" id="nR4-tM-2LU"/>
+                    </constraints>
+                </imageView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-OW-Xkc">
+                    <rect key="frame" x="176" y="315" width="23" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSu-0r-gPS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dud-qX-wq1">
+                    <rect key="frame" x="16" y="62" width="140" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tgG-OW-Xkc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="99s-ji-mYQ"/>
+                <constraint firstItem="HtY-JE-RvD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IbN-P5-Smj"/>
+                <constraint firstItem="tgG-OW-Xkc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KFi-h1-l0q"/>
+                <constraint firstItem="iSu-0r-gPS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O8G-HC-zVN"/>
+                <constraint firstAttribute="trailing" secondItem="HtY-JE-RvD" secondAttribute="trailing" id="RHQ-wm-IIn"/>
+                <constraint firstItem="dud-qX-wq1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="RZ6-qI-3PC"/>
+                <constraint firstAttribute="trailing" secondItem="iSu-0r-gPS" secondAttribute="trailing" id="Vwt-ko-d4B"/>
+                <constraint firstItem="HtY-JE-RvD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h5x-cz-VdN"/>
+                <constraint firstItem="dud-qX-wq1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="kbS-BQ-5h8"/>
+                <constraint firstAttribute="bottom" secondItem="iSu-0r-gPS" secondAttribute="bottom" id="tex-rM-beD"/>
+                <constraint firstItem="iSu-0r-gPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xmZ-IA-E9v"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_background_wallet" width="375" height="270"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Auction
+
+  Created by Иван Меликов on 18/06/2019.
+  Copyright © 2019 Oxbee. All rights reserved.
+*/
+
+" bids" = " زايد";
+
+"bids" = "زايد";
+
+"Auctions" = "المزاد";
+
+"Buy Bids" = "شراء العروض";
+
+"Badges" = "العلامات";
+
+"Notifications" = "النتبيهات";
+
+"Unpaid Wins" = "أرباح غير مدفوعة";
+
+"Buy it now Offers" = "اشتر العروض الآن";
+
+"My Orders" = "طلبياتي";
+
+"Bidding History" = "تاريخ المزايدة";
+
+"Help" = "مساعدة";
+
+"Language" = "اللغة";
+
+"Edit" = "تعديل";
+
+"Save" = "تصحيح";
+
+"STARTED" = "STARTED";
+
+"Price: " = " السعر";
+
+"Bets " = "زايد ";
+
+"The newest" = "الأحدث";
+
+"Search" = "بحث";
+
+"Start price: " = "سعر الافتتاح ";
+
+"Buy it now for " = "اشتر الآن بسعر ";
+
+"per bid" = "٢٠٠ للمزايدة";
+
+"Sales tax: " = " ضريبة البيع";
+
+"Shipping: " = " الشحن";
+
+"By it now price: " = " اشترها الآن بسعر";
+
+"Total" = " المجموع";
+
+"OK!" = "حسنا";
+
+"OK" = "حسنا";
+
+"Invalid code" = "الرمز غير صحيح";
+
+"Registration Error" = "خطأ في التسجيل";
+
+"Please, restart the application for the changes to take effect" = "يرجى إعادة تشغيل التطبيق لتصبح التغييرات نافذة المفعول";

@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Auction
+
+  Created by Иван Меликов on 18/06/2019.
+  Copyright © 2019 Oxbee. All rights reserved.
+*/
+
+" bids" = " bids";
+
+"bids" = "bids";
+
+"Auctions" = "Auctions";
+
+"Buy Bids" = "Buy Bids";
+
+"Badges" = "Badges";
+
+"Notifications" = "Notifications";
+
+"Unpaid Wins" = "Unpaid Wins";
+
+"Buy it now Offers" = "Buy it now Offers";
+
+"My Orders" = "My Orders";
+
+"Bidding History" = "Bidding History";
+
+"Help" = "Help";
+
+"Language" = "Language";
+
+"Edit" = "Edit";
+
+"Save" = "Save";
+
+"STARTED" = "STARTED";
+
+"Price: " = "Price: ";
+
+"Bets " = "Bets ";
+
+"The newest" = "The newest";
+
+"Search" = "Search";
+
+"Start price: " = "Start price: ";
+
+"Buy it now for " = "Buy it now for ";
+
+"per bid" = "per bid";
+
+"Sales tax: " = "Sales tax: ";
+
+"Shipping: " = "Shipping: ";
+
+"By it now price: " = "By it now price: ";
+
+"Total" = "Total";
+
+"OK!" = "OK!";
+
+"OK" = "OK";
+
+"Invalid code" = "Invalid code";
+
+"Registration Error" = "Registration Error";
+
+"Please, restart the application for the changes to take effect" = "Please, restart the application for the changes to take effect";

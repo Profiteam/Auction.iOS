@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "EhR-xP-UgD"; */
+"EhR-xP-UgD.text" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "MRg-TZ-RHu"; */
+"MRg-TZ-RHu.text" = "البريد الالكتروني";
+
+/* Class = "UILabel"; text = "Nickname:"; ObjectID = "oPu-1A-Vl2"; */
+"oPu-1A-Vl2.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Personal info"; ObjectID = "xtj-3f-Vxt"; */
+"xtj-3f-Vxt.text" = "معلومات شخصية";

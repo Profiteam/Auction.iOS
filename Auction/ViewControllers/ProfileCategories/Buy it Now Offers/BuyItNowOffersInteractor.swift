@@ -1,0 +1,58 @@
+//
+//  BuyItNowOffersInteractor.swift
+//  Auction
+//
+//  Created by Q on 03/04/2019.
+//  Copyright © 2019 Oxbee. All rights reserved.
+//
+
+import Foundation
+
+class BuyItNowOffersInteractor: BuyItNowOffersInteractorInputProtocol {
+
+    weak var presenter: BuyItNowOffersInteractorOutputProtocol?
+
+    func getBuyItNowOffers() {
+        let webService = AuctionWebService.init()
+        webService.GETQuery(endpoint: URLs.buy_it_now_offers, success: { (response) in
+            
+            if let data = response as? Data  {
+                self.presenter?.receiveBuyItNowOffers(data: data)
+            }
+        } ) { (error) in
+            print(error ?? "error")
+        }
+    }
+    
+    func addLotToFavorite(lotID: String) {
+        let webService = AuctionWebService.init()
+        webService.POSTQuery(endpoint: URLs.lot_add_to_favourite + lotID + "/", params: nil, success: { (response) in
+            
+            if let data = response as? Data {
+                let favoriteResponse = try? JSONDecoder().decode(FavoriteResponse.self, from: data)
+                if favoriteResponse?.status == true {
+                    self.presenter?.changeLotStatus(data: data)
+                }
+            }
+        })
+        { (error) in
+            print(error ?? "error")
+        }
+    }
+    
+    func removeLotToFavorite(lotID: String) {
+        let webService = AuctionWebService.init()
+        webService.POSTQuery(endpoint: URLs.lot_remove_from_favourite + lotID + "/", params: nil, success: { (response) in
+            
+            if let data = response as? Data {
+                let favoriteResponse = try? JSONDecoder().decode(FavoriteResponse.self, from: data)
+                if favoriteResponse?.status == true {
+                    self.presenter?.changeLotStatus(data: data)
+                }
+            }
+        })
+        { (error) in
+            print(error ?? "error")
+        }
+    }
+}

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Currency"; ObjectID = "1eQ-xo-Bqp"; */
+"1eQ-xo-Bqp.text" = "العملة";
+
+/* Class = "UILabel"; text = "Log out"; ObjectID = "Ah2-M4-c7M"; */
+"Ah2-M4-c7M.text" = "تسجيل خروج";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "BS4-0h-1DJ"; */
+"BS4-0h-1DJ.text" = "التنبيهات";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "IGF-RG-dRt"; */
+"IGF-RG-dRt.text" = "اللغة";

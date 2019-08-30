@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrdersViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="backButtonImage" destination="4tj-bM-5q8" id="hkI-md-hn6"/>
+                <outlet property="navigationHeight" destination="2Op-r4-kXL" id="RrT-Qo-lwn"/>
+                <outlet property="tableView" destination="XeN-FE-r5p" id="wwq-Dx-6wa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_backarrow_black" translatesAutoresizingMaskIntoConstraints="NO" id="4tj-bM-5q8">
+                    <rect key="frame" x="10" y="44" width="8" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="jfr-pe-G27"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNZ-0h-DXy">
+                    <rect key="frame" x="99" y="311" width="177" height="44"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Ooops, nothing here!">
+                            <attributes>
+                                <color key="NSColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name="AvenirNext-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="You dont have any orders">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="AvenirNext-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_notify" translatesAutoresizingMaskIntoConstraints="NO" id="evf-dZ-1Y8">
+                    <rect key="frame" x="154" y="220" width="67" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="Lax-HW-XOD"/>
+                        <constraint firstAttribute="width" constant="67" id="Ocq-Rd-SAZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdz-7U-2zG">
+                    <rect key="frame" x="10" y="40" width="140" height="24"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="Pn4-v5-IYk"/>
+                        <constraint firstAttribute="height" constant="24" id="nHP-Lc-OyL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                    <state key="normal" title="My Orders">
+                        <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonGesture:" destination="-1" eventType="touchUpInside" id="flF-dC-X1E"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XeN-FE-r5p">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7ro-8e-SZr"/>
+                        <outlet property="delegate" destination="-1" id="Add-h4-V6B"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XeN-FE-r5p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="2Op-r4-kXL"/>
+                <constraint firstItem="KNZ-0h-DXy" firstAttribute="top" secondItem="evf-dZ-1Y8" secondAttribute="bottom" constant="24" id="4dB-0O-mdr"/>
+                <constraint firstAttribute="bottom" secondItem="XeN-FE-r5p" secondAttribute="bottom" id="8qH-cP-MGj"/>
+                <constraint firstItem="XeN-FE-r5p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hd5-QH-YNs"/>
+                <constraint firstItem="4tj-bM-5q8" firstAttribute="leading" secondItem="Hdz-7U-2zG" secondAttribute="leading" id="Wkw-Xk-nVu"/>
+                <constraint firstItem="KNZ-0h-DXy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cr9-xy-YDl"/>
+                <constraint firstItem="XeN-FE-r5p" firstAttribute="top" secondItem="Hdz-7U-2zG" secondAttribute="bottom" constant="6" id="fOm-aW-iib"/>
+                <constraint firstItem="evf-dZ-1Y8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="mfx-kT-b5h"/>
+                <constraint firstItem="4tj-bM-5q8" firstAttribute="centerY" secondItem="Hdz-7U-2zG" secondAttribute="centerY" id="op3-Xc-uAu"/>
+                <constraint firstItem="evf-dZ-1Y8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pcE-c3-ITu"/>
+                <constraint firstItem="Hdz-7U-2zG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="uCu-Y2-Gse"/>
+                <constraint firstAttribute="trailing" secondItem="XeN-FE-r5p" secondAttribute="trailing" id="uXs-Ho-9FU"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_backarrow_black" width="9" height="16"/>
+        <image name="ic_notify" width="67" height="67"/>
+    </resources>
+</document>

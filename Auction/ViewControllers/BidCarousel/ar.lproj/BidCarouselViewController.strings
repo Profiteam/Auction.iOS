@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "My balance"; ObjectID = "EN5-lQ-AMv"; */
+"EN5-lQ-AMv.text" = "رصيدي";
+
+/* Class = "UIButton"; normalTitle = "Home"; ObjectID = "ORB-wL-A93"; */
+"ORB-wL-A93.normalTitle" = "الرئيسية";
+
+/* Class = "UILabel"; text = "Bids now 13$ each!"; ObjectID = "TVV-bM-pAB"; */
+"TVV-bM-pAB.text" = "Bids now 13$ each!";
+
+/* Class = "UIButton"; normalTitle = "Pay"; ObjectID = "lec-Kp-Vaa"; */
+"lec-Kp-Vaa.normalTitle" = "دفع";
