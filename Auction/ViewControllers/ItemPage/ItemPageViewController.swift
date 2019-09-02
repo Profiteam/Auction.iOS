@@ -140,12 +140,6 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
             appDelegate.connectSocket(token: UserDefaults.standard.string(forKey: "token")!, lotID: String(idString))
             
             self.presenter?.interactor?.getBets(lotId: String(idString))
-            
-            if bets.count == 0 {
-                if let closedDate = startedLotResponse?.closeDate {
-                    reloadTimer(time: getTimeDifferense(timeString: closedDate, addingTime: 0))
-                }
-            }
         default:
             buyItNowPrice = ""
             itemHeaderView.timerLabel.text = "Closed"
@@ -246,8 +240,10 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
                     // Win auction
                     modalView = .init(frame: UIScreen.main.bounds)
                     modalView.button.addTarget(self, action: #selector(modalViewButtonAction), for:.touchUpInside)
+                    modalView.winModalView()
                     view.addSubview(modalView)
                 
+                    modalView.prepare()
                     modalView.animate()
                 } else {
                     // Auction is closed

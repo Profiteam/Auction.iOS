@@ -108,7 +108,7 @@ class CustomModalView: UIView {
         button.layer.cornerRadius = buttonHeight/2
         button.setTitle(NSLocalizedString("OK!", comment: ""), for: .normal)
         button.titleLabel?.font = UIFont(name: "AvenirNextCondensed-Medium", size: 20.0)!
-        button.addTarget(self, action: #selector(closeModal), for: .touchUpInside)
+        button.addTarget(self, action: #selector(hide), for: .touchUpInside)
         
         addSubview(backgroundView)
         
@@ -314,10 +314,6 @@ class CustomModalView: UIView {
         modalView.addSubview(label)
     }
     
-    @objc func closeModal() {
-        hide()
-    }
-    
     // MODAL APPEAR METHOD'S
     
     func prepare() {
@@ -339,7 +335,7 @@ class CustomModalView: UIView {
         })
     }
     
-    func hide() {
+    @objc func hide() {
         UIView.animate(withDuration: 0.3, delay: 0.3, animations: {
             self.animateImage.alpha = 0.0
             self.modalView.center = CGPoint(x: UIScreen.main.bounds.width/2,
