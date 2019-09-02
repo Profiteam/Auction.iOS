@@ -28,9 +28,9 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-HG-R5Y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_stub" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-HG-R5Y">
                                 <rect key="frame" x="12" y="32" width="44" height="44"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="KZl-pa-AG2"/>
                                     <constraint firstAttribute="width" constant="44" id="Thr-a2-ujC"/>
@@ -121,4 +121,7 @@
             <point key="canvasLocation" x="53.600000000000001" y="48.575712143928037"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_avatar_stub" width="256" height="256"/>
+    </resources>
 </document>

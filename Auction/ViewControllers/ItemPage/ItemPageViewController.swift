@@ -431,7 +431,7 @@ extension ItemPageViewController: UITableViewDelegate, UITableViewDataSource {
                     resultUrl = resultUrl + imageUrl
                     betCell.avatar.kf.setImage(with: URL(string: resultUrl))
                 } else {
-                    betCell.avatar.image = UIImage()
+                    betCell.avatar.image = UIImage.init(named: "ic_avatar_stub")
                 }
                 
                 return betCell
