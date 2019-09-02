@@ -31,7 +31,7 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
     var bets = [BetsData]()
     var desriptionText = String()
     var buyItNowPrice = String()
-    var winTime = String()
+    var winTime = Int()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -84,16 +84,21 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
         desriptionText = startedLotResponse?.descriptions ?? ""
         buyItNowPrice = startedLotResponse?.buyNowPrice ?? ""
         
-        /* TO-DO WINNER TIME
-         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm:ss"
-        var dateString = dateFormatter.date(from: startedLotResponse?.winTimer ?? "00:00:00")
-        print(dateString)
-         
-        */
+        // Get Win Time
+        
+        let time = startedLotResponse?.winTimer ?? "00:00:00"
+        let components = time.split { $0 == ":" } .map { (x) -> Int in return Int(String(x))! }
+        let hours = components[0]
+        let minutes = components[1]
+        let seconds = components[2]
+        
+        winTime = hours*60*60 + minutes*60 + seconds
+
+        // Reload Table
         
         tableView.reloadData()
+        
+        // Reload Lot Header
         
         itemHeaderView.timerLabel.delegate = self
         itemHeaderView.nameLabel.text = startedLotResponse?.name
@@ -155,10 +160,10 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
         }
 
         let timeString = bets.first?.date
-        reloadTimer(time: getTimeDifferense(timeString: timeString ?? "", addingTime: 20))
+        reloadTimer(time: getTimeDifferense(timeString: timeString ?? "", addingTime: winTime))
         
         if bets.first?.userID == UserDefaults.standard.string(forKey: "user_id") {
-            customBarView.animateTimer(timerDuration: getTimeDifferense(timeString: timeString ?? "", addingTime: 20))
+            customBarView.animateTimer(timerDuration: getTimeDifferense(timeString: timeString ?? "", addingTime: winTime))
             customBarView.middleButton.isUserInteractionEnabled = false
         } else {
             customBarView.changeButtonStyle(style: 0)
@@ -189,7 +194,7 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
         let calendar = Calendar.current
         
         if date != nil {
-            let time = calendar.date(byAdding: .second, value: addingTime, to: date!)
+            let time = calendar.date(byAdding: .second, value: addingTime, to: date ?? Date())
             let countdownTime: TimeInterval = TimeInterval(time!.offsetFrom(date: Date()))
             
             return countdownTime
@@ -223,7 +228,7 @@ class ItemPageViewController: UIViewController, ItemPageViewProtocol, CustomBott
             let trimmedIsoString = timeString.replacingOccurrences(of: "\\.\\d+", with: "", options: .regularExpression)
             let date = ISO8601DateFormatter().date(from: trimmedIsoString)
             let calendar = Calendar.current
-            let time = calendar.date(byAdding: .second, value: 20, to: date!)
+            let time = calendar.date(byAdding: .second, value: winTime, to: date ?? Date())
             let countdownTime: TimeInterval = TimeInterval(time!.offsetFrom(date: Date()))
             reloadTimer(time: countdownTime)
             
