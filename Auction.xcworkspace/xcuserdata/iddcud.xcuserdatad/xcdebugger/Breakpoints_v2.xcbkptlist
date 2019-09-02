@@ -778,7 +778,7 @@
                   moduleName = "Auction"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/Registration/RegistrationInteractor.swift"
-                  timestampString = "589135894.093609"
+                  timestampString = "589136136.018804"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -793,7 +793,7 @@
                   moduleName = "Auction"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/Registration/RegistrationInteractor.swift"
-                  timestampString = "589135894.095502"
+                  timestampString = "589136136.0232"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -1226,7 +1226,7 @@
                   moduleName = "Auction"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/Profile/ProfileInteractor.swift"
-                  timestampString = "589135894.177423"
+                  timestampString = "589136136.2297029"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -1241,7 +1241,7 @@
                   moduleName = "Auction"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/Profile/ProfileInteractor.swift"
-                  timestampString = "589135894.179415"
+                  timestampString = "589136136.233802"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -1264,6 +1264,198 @@
             startingLineNumber = "92"
             endingLineNumber = "92"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136314.06076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "setStartedLot(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136324.801659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "setStartedLot(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136326.301368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "setStartedLot(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136579.952724"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Auction.ItemPageViewController.receiveSocketMessage(notification: __C.NSNotification) -&gt; ()"
+                  moduleName = "Auction"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+                  timestampString = "589136580.209915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "635">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Auction.ItemPageViewController.receiveSocketMessage(notification: __C.NSNotification) -&gt; ()"
+                  moduleName = "Auction"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/q/Desktop/Auction.iOS/Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+                  timestampString = "589136580.21206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "21156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136581.1178401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136589.6134681"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136591.201221"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136722.973612"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136723.691993"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "receiveSocketMessage(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Auction/ViewControllers/ItemPage/ItemPageViewController.swift"
+            timestampString = "589136729.054207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "receiveSocketMessage(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
